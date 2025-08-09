@@ -1,5 +1,6 @@
 import InfoBox from "@/components/layout/info-box";
 import BuildingExcellenceSection from "@/components/sections/home/building-excellence";
+import EnhanceFutureSection from "@/components/sections/home/enhance-future";
 import HeroSection from "@/components/sections/home/hero";
 import ServiceSection from "@/components/sections/home/services";
 import StylishIdeaSection from "@/components/sections/home/stylish-ideas";
@@ -10,6 +11,7 @@ const HomePage = () => {
     <>
       <InfoBox />
       <HeroSection />
+      <EnhanceFutureSection />
       <StylishIdeaSection />
       <BuildingExcellenceSection />
       <SystemSection />
