@@ -1,3 +1,6 @@
+import FooterSection from "@/components/layout/footer";
+import Header from "@/components/layout/header";
+import Sidebar from "@/components/layout/sidebar";
 import "../styles/globals.css";
 
 export const metadata = {
@@ -9,7 +12,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header>
+          <Header />
+          <aside className="fixed top-0 left-0 h-screen w-25">
+            <Sidebar />
+          </aside>
+        </header>
+
+        <main className="ml-25">{children}</main>
+
+        <footer className="ml-25">
+          <FooterSection />
+        </footer>
+      </body>
     </html>
   );
 }

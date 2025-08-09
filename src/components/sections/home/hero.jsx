@@ -1,5 +1,5 @@
 const HeroSection = () => {
-  return <div>HeroSection</div>;
+  return <div className="bg-crimson py-10 mb-5 ">HeroSection</div>;
 };
 
 export default HeroSection;
