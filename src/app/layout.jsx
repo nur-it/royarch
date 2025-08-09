@@ -1,5 +1,6 @@
 import FooterSection from "@/components/layout/footer";
 import HeaderSection from "@/components/layout/header";
+import PreLoaderScreen from "@/components/shared/pre-loader";
 import "../styles/globals.css";
 
 export const metadata = {
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <PreLoaderScreen />
         <header>
           <HeaderSection />
         </header>
