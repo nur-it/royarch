@@ -3,6 +3,7 @@ import BuildingExcellenceSection from "@/components/sections/home/building-excel
 import HeroSection from "@/components/sections/home/hero";
 import ServiceSection from "@/components/sections/home/services";
 import StylishIdeaSection from "@/components/sections/home/stylish-ideas";
+import SystemSection from "@/components/sections/home/systems";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <HeroSection />
       <StylishIdeaSection />
       <BuildingExcellenceSection />
+      <SystemSection />
       <ServiceSection />
     </>
   );

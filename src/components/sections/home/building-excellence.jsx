@@ -24,7 +24,7 @@ const ServiceCard = ({ icon: Icon, title, description }) => (
 
       {/* Content */}
       <div className="flex-1 pt-2">
-        <h3 className="mb-3 text-xl leading-tight font-semibold text-white">
+        <h3 className="mb-3 text-xl leading-tight font-normal text-white">
           {title}
         </h3>
         <p className="text-15 leading-relaxed font-[300] text-white/80">
@@ -47,7 +47,7 @@ const BuildingExcellenceSection = () => {
         </div>
 
         {/* Content */}
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {building_excellence.map((service) => (
             <ServiceCard
               key={service.id}
