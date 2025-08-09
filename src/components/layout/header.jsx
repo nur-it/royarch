@@ -1,26 +1,27 @@
-import Link from "next/link";
-import { EmailIcon, PhoneIcon } from "../shared/svgs";
+"use client";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
+import Logo from "./Logo";
+import Sidebar from "./sidebar";
 
-const InfoBox = () => {
+const HeaderSection = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="bg-midnight flex h-25 w-full justify-end">
-      <div className="absolute top-[30px] right-[30px] z-[2] flex items-center justify-center gap-3 bg-white/5 p-[11px] text-sm font-[300] tracking-wider">
-        <Link
-          href="tel:123456789"
-          className="inline-flex items-center gap-1 text-white/80"
-        >
-          <PhoneIcon className="size-4" /> +1 234 5678 90 00
-        </Link>
-        <span className="inline-block h-4 w-[1px] bg-[#4c4c4c]" />
-        <Link
-          href="mailto:royarch@domain"
-          className="inline-flex items-center gap-1 text-white/80"
-        >
-          <EmailIcon className="size-4" /> royarch@domain.com
-        </Link>
+    <>
+      <div
+        className={cn(
+          "bg-night fixed top-0 left-25 z-50 flex h-25 w-[310px] items-center justify-center",
+          "transition-transform duration-300 ease-in-out",
+          isMenuOpen ? "lg:-translate-x-25" : "-translate-x-0",
+        )}
+      >
+        <Logo />
       </div>
-    </div>
+      <aside className="fixed top-0 left-0 lg:h-screen w-25">
+        <Sidebar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      </aside>
+    </>
   );
 };
 
-export default InfoBox;
+export default HeaderSection;

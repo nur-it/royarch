@@ -1,4 +1,4 @@
-import InfoBox from "@/components/layout/Header";
+import InfoBox from "@/components/layout/info-box";
 
 export const metadata = {
   title: "Contact - Royarch",

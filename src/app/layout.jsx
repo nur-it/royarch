@@ -1,6 +1,5 @@
 import FooterSection from "@/components/layout/footer";
-import Logo from "@/components/layout/Logo";
-import Sidebar from "@/components/layout/sidebar";
+import HeaderSection from "@/components/layout/header";
 import "../styles/globals.css";
 
 export const metadata = {
@@ -14,17 +13,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header>
-          <div className="bg-night fixed top-0 left-25 z-50 flex h-25 w-[310px] items-center justify-center">
-            <Logo />
-          </div>
-          <aside className="fixed top-0 left-0 h-screen w-25">
-            <Sidebar />
-          </aside>
+          <HeaderSection />
         </header>
 
-        <main className="ml-25">{children}</main>
+        <main className="lg:ml-25">{children}</main>
 
-        <footer className="ml-25">
+        <footer className="lg:ml-25">
           <FooterSection />
         </footer>
       </body>

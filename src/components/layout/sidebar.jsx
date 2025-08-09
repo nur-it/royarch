@@ -1,14 +1,19 @@
-"use client";
+import { cn } from "@/lib/utils";
 import { sidebarConfig, socialLinks } from "@/mocks/sidebar.mocks";
 import Link from "next/link";
-import { useState } from "react";
 
-const HamburgerMenu = ({ isOpen, onToggle }) => {
+const HamburgerMenu = ({ isOpen, onToggle, isMenuOpen }) => {
   const baseLineClasses =
     "h-[2px] w-7 bg-white transition-all duration-300 ease-in-out";
 
   return (
-    <div className="bg-primary flex min-h-25 w-full items-center justify-center">
+    <div
+      className={cn(
+        "bg-primary flex min-h-25 w-full items-center justify-center",
+        "transition-transform duration-300 ease-in-out",
+        isMenuOpen ? "lg:translate-y-25" : "translate-y-0",
+      )}
+    >
       <button
         className="inline-flex cursor-pointer flex-col justify-center gap-1.5 p-2"
         onClick={onToggle}
@@ -35,12 +40,14 @@ const HamburgerMenu = ({ isOpen, onToggle }) => {
   );
 };
 
-const SocialLinksSection = () => {
+const SocialLinksSection = ({ isMenuOpen }) => {
   const decorativeLine = "mx-auto w-[1px] bg-[#4c4c4c]";
 
   return (
-    <div className="bg-darker big:min-h-[501px] flex h-full w-full flex-col items-center justify-between py-[30px]">
-      <div className={`${decorativeLine} h-56`} />
+    <div className="bg-darker big:min-h-[501px] hidden h-full w-full flex-col items-center justify-between py-[30px] lg:flex">
+      <div
+        className={`${decorativeLine} transition-all duration-300 ease-in-out ${isMenuOpen ? "mt-24 h-32" : "h-56"}`}
+      />
 
       <nav aria-label="Social Links">
         <ul className="flex flex-col items-center justify-center gap-4">
@@ -69,7 +76,7 @@ const SocialLinksSection = () => {
 
 const CopyrightSection = () => {
   return (
-    <div className="big:min-h-[350px] relative h-[350px] w-full">
+    <div className="big:min-h-[350px] relative hidden h-[350px] w-full lg:block">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-180">
         <p
           className="text-17 text-text-light cursor-text whitespace-nowrap select-text"
@@ -84,9 +91,7 @@ const CopyrightSection = () => {
 };
 
 // Main Sidebar component
-const Sidebar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+const Sidebar = ({ isMenuOpen, setIsMenuOpen }) => {
   const handleMenuToggle = () => {
     setIsMenuOpen((prev) => !prev);
   };
@@ -98,9 +103,13 @@ const Sidebar = () => {
       aria-label="Sidebar Navigation"
     >
       <div className="flex h-full flex-col items-center justify-between">
-        <HamburgerMenu isOpen={isMenuOpen} onToggle={handleMenuToggle} />
+        <HamburgerMenu
+          isOpen={isMenuOpen}
+          onToggle={handleMenuToggle}
+          isMenuOpen={isMenuOpen}
+        />
 
-        <SocialLinksSection />
+        <SocialLinksSection isMenuOpen={isMenuOpen} />
 
         <CopyrightSection />
       </div>
