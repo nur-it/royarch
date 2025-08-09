@@ -74,6 +74,8 @@
   --text-30--font-weight: 500;
 
   --spacing-25: 6.25rem;
+
+  --breakpoint-big: 1920px;
 }
 
 @layer base {
