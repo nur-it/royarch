@@ -17,7 +17,7 @@ const HeaderSection = () => {
       >
         <Logo />
       </div>
-      <aside className="fixed top-0 left-0 lg:h-screen w-25">
+      <aside className="fixed top-0 left-0 z-50 w-25 lg:h-screen">
         <Sidebar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       </aside>
     </>
