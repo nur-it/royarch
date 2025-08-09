@@ -53,3 +53,39 @@ export const TwitterIcon = ({ className, ...props }) => {
     </svg>
   );
 };
+
+export const PhoneIcon = ({ className, ...props }) => {
+  return (
+    <svg
+      {...props}
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      width={448}
+      height={512}
+      viewBox="0 0 448 512"
+    >
+      <path
+        fill="currentColor"
+        d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48M94 416c-7.033 0-13.057-4.873-14.616-11.627l-14.998-65a15 15 0 0 1 8.707-17.16l69.998-29.999a15 15 0 0 1 17.518 4.289l30.997 37.885c48.944-22.963 88.297-62.858 110.781-110.78l-37.886-30.997a15 15 0 0 1-4.289-17.518l30-69.998a15 15 0 0 1 17.16-8.707l65 14.998A15 15 0 0 1 384 126c0 160.292-129.945 290-290 290"
+      ></path>
+    </svg>
+  );
+};
+
+export const EmailIcon = ({ className, ...props }) => {
+  return (
+    <svg
+      {...props}
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+    >
+      <path
+        fill="currentColor"
+        d="M5 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm1.4 3.5h11.2c.77 0 1.4.62 1.4 1.4v8.2a1.4 1.4 0 0 1-1.4 1.4H6.4c-.77 0-1.4-.63-1.4-1.4V7.9c0-.78.62-1.4 1.4-1.4M6 8v2l6 4l6-4V8l-6 4z"
+      ></path>
+    </svg>
+  );
+};

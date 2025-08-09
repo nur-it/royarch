@@ -26,7 +26,7 @@ const HamburgerMenu = ({ isOpen, onToggle }) => {
           }`}
         />
         <span
-          className={`h-[2px] w-5 bg-white transition-all duration-300 ease-in-out ${
+          className={`h-[2px] w-4 bg-white transition-all duration-300 ease-in-out ${
             isOpen ? "translate-x-3 opacity-0" : "translate-x-0 opacity-100"
           }`}
         />
