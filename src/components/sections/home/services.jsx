@@ -1,7 +1,7 @@
 import { services } from "@/mocks/services.mocks";
 
 const ServiceCard = ({ icon: Icon, title, description }) => (
-  <div className="group flex flex-row items-start space-y-4 space-x-6">
+  <div className="group flex items-start gap-6">
     {/* Icon Container */}
     <div className="flex-shrink-0">
       <div className="group-hover:border-primary group-hover:bg-primary border-charcoal flex h-[110px] w-[110px] cursor-pointer items-center justify-center rounded-full border-[10px] bg-transparent transition-colors duration-300">
@@ -34,7 +34,7 @@ const ServiceSection = () => {
             With people's comfort in mind
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 2xl:gap-16">
           {services.map((service) => (
             <ServiceCard
               key={service.id}
