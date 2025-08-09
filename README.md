@@ -26,10 +26,10 @@ This project is a web application built with Next.js and React. It serves as a p
 
 ### Features
 
-*   **Home Page:** A landing page with a hero section.
-*   **Portfolio:** Showcases the firm's projects.
-*   **Contact Page:** A form to get in touch with the firm.
-*   **Project Pages:** Detailed pages for each project.
+- **Home Page:** A landing page with a hero section.
+- **Portfolio:** Showcases the firm's projects.
+- **Contact Page:** A form to get in touch with the firm.
+- **Project Pages:** Detailed pages for each project.
 
 ## Available Scripts
 
@@ -61,14 +61,14 @@ Runs the linter to check for code quality and style issues.
 
 ## Dependencies
 
-*   [next](https.nextjs.org): A React framework for building server-side rendered and statically generated web applications.
-*   [react](https.reactjs.org): A JavaScript library for building user interfaces.
-*   [react-dom](https.reactjs.org/docs/react-dom.html): Provides DOM-specific methods that can be used at the top level of your app.
+- [next](https.nextjs.org): A React framework for building server-side rendered and statically generated web applications.
+- [react](https.reactjs.org): A JavaScript library for building user interfaces.
+- [react-dom](https.reactjs.org/docs/react-dom.html): Provides DOM-specific methods that can be used at the top level of your app.
 
 ## Dev Dependencies
 
-*   [eslint](https.eslint.org): A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
-*   [eslint-config-next](https://nextjs.org/docs/basic-features/eslint): The default ESLint configuration for Next.js projects.
+- [eslint](https.eslint.org): A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+- [eslint-config-next](https://nextjs.org/docs/basic-features/eslint): The default ESLint configuration for Next.js projects.
 
 ## Folder Structure
 
@@ -115,4 +115,3 @@ Runs the linter to check for code quality and style issues.
 ├── package.json
 └── README.md
 ```
-
