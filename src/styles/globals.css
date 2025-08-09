@@ -2,7 +2,11 @@
 
 @import "tailwindcss";
 
-@theme {
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
   /* Background Colors */
   --color-primary: #d92828;
   --color-secondary: #ffffff0d;
@@ -97,4 +101,13 @@
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 12px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
