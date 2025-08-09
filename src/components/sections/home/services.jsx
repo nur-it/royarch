@@ -7,7 +7,7 @@ const ServiceCard = ({ icon: Icon, title, description }) => (
       <div className="group-hover:border-primary group-hover:bg-primary border-charcoal flex h-[110px] w-[110px] cursor-pointer items-center justify-center rounded-full border-[10px] bg-transparent transition-colors duration-300">
         <Icon
           className="h-10 w-10 text-white transition-all duration-300 group-hover:scale-[0.8] group-hover:text-gray-300"
-          strokeWidth={1.5}
+          strokeWidth={2.5}
         />
       </div>
     </div>
