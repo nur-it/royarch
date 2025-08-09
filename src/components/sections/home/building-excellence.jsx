@@ -6,12 +6,12 @@ const ServiceCard = ({ icon: Icon, title, description }) => (
       {/* Icon with corner brackets and border */}
       <div className="group-hover:bg-primary relative flex-shrink-0 bg-transparent transition-colors duration-300">
         {/* Border around icon area */}
-        <div className="border-charcoal h-[120px] w-[120px] border transition-colors duration-300 group-hover:border-gray-300/50"></div>
+        <div className="border-charcoal h-[120px] w-[120px] border transition-colors duration-300 group-hover:border-gray-300/20"></div>
 
         {/* Corner brackets */}
-        <div className="border-muted absolute -top-0 -left-0 h-3 w-3 border-t-2 border-l-2 transition-all duration-300 group-hover:h-full group-hover:w-full group-hover:border-gray-300/50"></div>
+        <div className="border-muted absolute -top-0 -left-0 h-3 w-3 border-t-2 border-l-2 transition-all duration-300 group-hover:h-full group-hover:w-full group-hover:border-gray-300/20"></div>
 
-        <div className="border-muted absolute -right-0 -bottom-0 h-3 w-3 border-r-2 border-b-2 transition-all duration-300 group-hover:h-full group-hover:w-full group-hover:border-gray-300/50"></div>
+        <div className="border-muted absolute -right-0 -bottom-0 h-3 w-3 border-r-2 border-b-2 transition-all duration-300 group-hover:h-full group-hover:w-full group-hover:border-gray-300/20"></div>
 
         {/* Icon */}
         <div className="absolute inset-0 flex items-center justify-center">
