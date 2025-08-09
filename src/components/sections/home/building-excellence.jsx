@@ -6,12 +6,12 @@ const ServiceCard = ({ icon: Icon, title, description }) => (
       {/* Icon with corner brackets and border */}
       <div className="group-hover:bg-primary relative flex-shrink-0 bg-transparent transition-colors duration-300">
         {/* Border around icon area */}
-        <div className="border-charcoal h-[120px] w-[120px] border transition-colors duration-300 group-hover:border-gray-300/50"></div>
+        <div className="border-charcoal h-[120px] w-[120px] border transition-colors duration-300 group-hover:border-gray-300/20"></div>
 
         {/* Corner brackets */}
-        <div className="border-muted absolute -top-0 -left-0 h-3 w-3 border-t-2 border-l-2 transition-all duration-300 group-hover:h-full group-hover:w-full group-hover:border-gray-300/50"></div>
+        <div className="border-muted absolute -top-0 -left-0 h-3 w-3 border-t-2 border-l-2 transition-all duration-300 group-hover:h-full group-hover:w-full group-hover:border-gray-300/20"></div>
 
-        <div className="border-muted absolute -right-0 -bottom-0 h-3 w-3 border-r-2 border-b-2 transition-all duration-300 group-hover:h-full group-hover:w-full group-hover:border-gray-300/50"></div>
+        <div className="border-muted absolute -right-0 -bottom-0 h-3 w-3 border-r-2 border-b-2 transition-all duration-300 group-hover:h-full group-hover:w-full group-hover:border-gray-300/20"></div>
 
         {/* Icon */}
         <div className="absolute inset-0 flex items-center justify-center">
@@ -24,7 +24,7 @@ const ServiceCard = ({ icon: Icon, title, description }) => (
 
       {/* Content */}
       <div className="flex-1 pt-2">
-        <h3 className="mb-3 text-xl leading-tight font-semibold text-white">
+        <h3 className="mb-3 text-xl leading-tight font-normal text-white">
           {title}
         </h3>
         <p className="text-15 leading-relaxed font-[300] text-white/80">
@@ -47,7 +47,7 @@ const BuildingExcellenceSection = () => {
         </div>
 
         {/* Content */}
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           {building_excellence.map((service) => (
             <ServiceCard
               key={service.id}

@@ -106,3 +106,10 @@
   margin: 0 auto;
   padding: 0 12px;
 }
+
+.stylish_idea_bg {
+  background-image: url("/service-bg.jpg");
+  background-color: theme(--color-slate);
+  background-position: center bottom;
+  background-size: cover;
+}

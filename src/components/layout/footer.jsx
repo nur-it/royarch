@@ -27,7 +27,7 @@ const FooterSection = () => {
     <section className="bg-crimson">
       <div className="divide-midnight grid min-h-[360px] grid-cols-1 divide-y md:grid-cols-3 md:divide-x xl:grid-cols-4 2xl:h-[440px]">
         <div className="hidden h-full items-center py-[30px] pl-[90px] xl:flex">
-          <div>
+          <Link href="/" className="block">
             <Image
               src="/footer-logo.png"
               alt="Logo"
@@ -35,7 +35,7 @@ const FooterSection = () => {
               height={87.14}
               className="h-auto w-auto"
             />
-          </div>
+          </Link>
         </div>
         <div className="flex h-full items-center px-[30px] py-[30px] 2xl:pr-0 2xl:pl-[90px]">
           <FooterContent title="Locations">
