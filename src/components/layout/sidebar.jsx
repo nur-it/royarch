@@ -44,9 +44,9 @@ const SocialLinksSection = ({ isMenuOpen }) => {
   const decorativeLine = "mx-auto w-[1px] bg-[#4c4c4c]";
 
   return (
-    <div className="bg-darker big:min-h-[501px] hidden h-full w-full flex-col items-center justify-between py-[30px] lg:flex">
+    <div className="bg-darker big:min-h-[501px] hidden h-full w-full flex-col items-center justify-between py-4 lg:flex 2xl:py-[30px]">
       <div
-        className={`${decorativeLine} transition-all duration-300 ease-in-out ${isMenuOpen ? "mt-24 h-32" : "h-56"}`}
+        className={`${decorativeLine} transition-all duration-300 ease-in-out ${isMenuOpen ? "big:h-32 big:mt-24 mt-25 h-0 xl:h-10 2xl:h-28" : "big:h-56 lg:h-10 xl:h-28 2xl:h-44"}`}
       />
 
       <nav aria-label="Social Links">
@@ -69,7 +69,9 @@ const SocialLinksSection = ({ isMenuOpen }) => {
         </ul>
       </nav>
 
-      <div className={`${decorativeLine} h-10`} />
+      <div
+        className={`${decorativeLine} ${isMenuOpen ? "lg:h-0 xl:h-10" : "h-10"} `}
+      />
     </div>
   );
 };
