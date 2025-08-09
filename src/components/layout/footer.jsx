@@ -25,7 +25,7 @@ const FooterLink = ({ href, children, external = false }) => (
 const FooterSection = () => {
   return (
     <section className="bg-crimson">
-      <div className="divide-midnight grid min-h-[360px] grid-cols-1 divide-y md:grid-cols-3 md:divide-x xl:grid-cols-4 2xl:min-h-[440px]">
+      <div className="divide-midnight grid min-h-[360px] grid-cols-1 divide-y md:grid-cols-3 md:divide-x xl:grid-cols-4 2xl:h-[440px]">
         <div className="hidden h-full items-center py-[30px] pl-[90px] xl:flex">
           <div>
             <Image
