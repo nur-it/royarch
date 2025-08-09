@@ -10,7 +10,7 @@ const HeaderSection = () => {
     <>
       <div
         className={cn(
-          "bg-night fixed top-0 left-25 z-50 flex h-25 w-[310px] items-center justify-center",
+          "bg-night fixed top-0 left-25 z-50 flex h-25 w-full items-center pl-4 md:pl-8 lg:w-[310px] lg:justify-center lg:pl-0",
           "transition-transform duration-300 ease-in-out",
           isMenuOpen ? "lg:-translate-x-25" : "-translate-x-0",
         )}
