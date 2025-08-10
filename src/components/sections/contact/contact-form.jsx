@@ -1,4 +1,5 @@
 import { ClockIcon, MapIcon, PhoneIcon2 } from "@/components/shared/svgs";
+import FormLayout from "./form";
 
 const infoCards = [
   {
@@ -34,7 +35,7 @@ function InfoCard({ icon, title, description, className = "" }) {
 
 const ContactFormSection = () => {
   return (
-    <section className="bg-midnight py-8 lg:py-25 2xl:py-[140px]">
+    <section className="bg-midnight py-25 2xl:py-[140px]">
       <div className="container_fluid">
         <div className="mb-6">
           <p className="mb-1 text-sm">Get in touch</p>
@@ -45,7 +46,7 @@ const ContactFormSection = () => {
 
         {/* address contact information */}
 
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-0">
+        <div className="mb-8 grid grid-cols-1 gap-6 lg:mb-12 lg:grid-cols-3 lg:gap-0">
           {infoCards.map((card, index) => {
             // Auto apply special border for middle card in desktop
             let borderClass = "";
@@ -58,6 +59,7 @@ const ContactFormSection = () => {
         </div>
 
         {/* contact form */}
+        <FormLayout />
       </div>
     </section>
   );
