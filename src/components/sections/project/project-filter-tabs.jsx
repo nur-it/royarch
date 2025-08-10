@@ -8,7 +8,7 @@ const ProjectFilterTabSection = ({ activeCategory, onCategoryChange }) => {
         {portfolioCategories.map((category) => (
           <li
             key={category.id}
-            className="inline-block py-6 last:border-r last:border-[#5e5e5e] last:pr-0 lg:last:border-r-0 2xl:py-[70px]"
+            className="inline-block py-6 first:border-l last:border-r last:border-[#5e5e5e] last:pr-0 2xl:py-[70px]"
           >
             <button
               onClick={() => onCategoryChange(category.id)}

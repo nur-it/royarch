@@ -3,7 +3,7 @@ import InfoContent from "@/components/shared/info-content";
 import PageTitle from "@/components/shared/page-title";
 
 export const metadata = {
-  title: "Projects | Royarch",
+  title: "Projects - Royarch",
 };
 
 const ProjectsPage = () => {
