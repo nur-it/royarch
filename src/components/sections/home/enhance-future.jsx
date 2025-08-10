@@ -7,7 +7,7 @@ const ServiceCard = ({ icon: Icon, title, description }) => (
 
     <Link
       href="/"
-      className="group-hover:bg-primary bg-darkest block flex h-[82px] w-[95px] cursor-pointer items-center justify-center transition-colors duration-300"
+      className="group-hover:bg-primary bg-darkest flex h-[82px] w-[95px] cursor-pointer items-center justify-center transition-colors duration-300"
     >
       <Icon
         className="h-10 w-10 text-white transition-all duration-300 group-hover:scale-[0.8] group-hover:text-gray-300"
