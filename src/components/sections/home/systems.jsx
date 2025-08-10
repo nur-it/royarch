@@ -1,5 +1,6 @@
 import { systems } from "@/mocks/systems.mocks";
 import Image from "next/image";
+import Link from "next/link";
 
 const SystemCard = ({ system }) => {
   if (system.isImage) {
@@ -23,12 +24,15 @@ const SystemCard = ({ system }) => {
       {/* Content */}
       <div className="flex h-full min-h-[400px] flex-col items-center justify-center gap-4 p-6 text-center">
         {/* Icon */}
-        <div className="group-hover:border-primary group-hover:bg-primary mb-2 flex h-[98px] w-[98px] cursor-pointer items-center justify-center rounded-full border-2 border-white bg-transparent transition-colors duration-300">
+        <Link
+          href="/"
+          className="group-hover:border-primary group-hover:bg-primary mb-2 flex h-[98px] w-[98px] cursor-pointer items-center justify-center rounded-full border-2 border-white bg-transparent transition-colors duration-300"
+        >
           <Icon
             className="h-10 w-10 text-white transition-all duration-300 group-hover:scale-[0.8] group-hover:text-gray-300"
             strokeWidth={2.5}
           />
-        </div>
+        </Link>
 
         <h3 className="text-xl leading-tight font-semibold text-white">
           {title}
