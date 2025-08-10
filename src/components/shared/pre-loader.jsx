@@ -51,7 +51,7 @@ const PreLoaderScreen = () => {
       />
 
       {/* Spinner */}
-      <div className="absolute bottom-32 h-16 w-16">
+      <div className="absolute bottom-32 h-20 w-20">
         {/* Placeholder border */}
         <div className="border-darkest h-full w-full rounded-full border-2" />
 
