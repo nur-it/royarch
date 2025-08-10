@@ -1,5 +1,6 @@
 import FooterSection from "@/components/layout/footer";
 import HeaderSection from "@/components/layout/header";
+import BottomToTop from "@/components/shared/bottom-top";
 import PreLoaderScreen from "@/components/shared/pre-loader";
 import "../styles/globals.css";
 
@@ -20,8 +21,9 @@ export default function RootLayout({ children }) {
 
         <main className="lg:ml-25">{children}</main>
 
-        <footer className="lg:ml-25">
+        <footer className="relative lg:ml-25">
           <FooterSection />
+          <BottomToTop />
         </footer>
       </body>
     </html>

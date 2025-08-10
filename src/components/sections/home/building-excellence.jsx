@@ -1,4 +1,5 @@
 import { building_excellence } from "@/mocks/building-excellence.mocks";
+import Link from "next/link";
 
 const ServiceCard = ({ icon: Icon, title, description }) => (
   <div className="group cursor-pointer">
@@ -14,12 +15,15 @@ const ServiceCard = ({ icon: Icon, title, description }) => (
         <div className="border-muted absolute -right-0 -bottom-0 h-3 w-3 border-r-2 border-b-2 transition-all duration-300 group-hover:h-full group-hover:w-full group-hover:border-gray-300/20"></div>
 
         {/* Icon */}
-        <div className="absolute inset-0 flex items-center justify-center">
+        <Link
+          href="/"
+          className="absolute inset-0 flex items-center justify-center"
+        >
           <Icon
             className="h-10 w-10 text-white transition-all duration-300 group-hover:scale-[0.8] group-hover:text-gray-300"
             strokeWidth={2.5}
           />
-        </div>
+        </Link>
       </div>
 
       {/* Content */}

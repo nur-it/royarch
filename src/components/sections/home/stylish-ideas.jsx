@@ -1,15 +1,19 @@
 import { ideas } from "@/mocks/stylish-idea.mocks";
+import Link from "next/link";
 
 const IdeaCard = ({ icon: Icon, title, description }) => (
   <div className="group border-darkest flex items-center space-x-6 border backdrop-blur-xs">
     {/* Icon Circle */}
     <div className="bg-darkest flex h-[207px] w-[47%] flex-shrink-0 items-center justify-center">
-      <div className="group-hover:border-primary group-hover:bg-primary border-border-dark flex h-[124px] w-[124px] cursor-pointer items-center justify-center rounded-full border bg-transparent transition-colors duration-300">
+      <Link
+        href="/"
+        className="group-hover:border-primary group-hover:bg-primary border-border-dark flex h-[124px] w-[124px] cursor-pointer items-center justify-center rounded-full border bg-transparent transition-colors duration-300"
+      >
         <Icon
           className="h-12 w-12 text-white transition-all duration-300 group-hover:scale-[0.8] group-hover:text-gray-300"
           strokeWidth={2.5}
         />
-      </div>
+      </Link>
     </div>
 
     {/* Content */}
