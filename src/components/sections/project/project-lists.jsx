@@ -20,7 +20,7 @@ const ProjectLists = () => {
         activeCategory={activeCategory}
         onCategoryChange={setActiveCategory}
       />
-      <section className="py-4 lg:py-25 2xl:py-[140px]">
+      <section className="py-6 lg:py-25 2xl:py-[140px]">
         {filteredItems && filteredItems.length ? (
           <ProjectsLayout items={filteredItems} />
         ) : (
