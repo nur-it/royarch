@@ -1,5 +1,5 @@
-import InfoBox from "@/components/layout/info-box";
 import ContactFormSection from "@/components/sections/contact/contact-form";
+import InfoContent from "@/components/shared/info-content";
 import PageTitle from "@/components/shared/page-title";
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 const ContactPage = () => {
   return (
     <>
-      <InfoBox />
+      <InfoContent />
       <PageTitle>
         <h1 className="text-5xl leading-tight font-bold text-white capitalize">
           Contact
