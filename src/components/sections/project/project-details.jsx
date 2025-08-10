@@ -8,7 +8,7 @@ const ProjectDetailRow = ({ label, value, isLast }) => {
   if (!value) return null;
 
   return (
-    <div className={`flex ${!isLast ? "border-b border-gray-700" : ""}`}>
+    <div className={`flex ${!isLast ? "border-darker border-b" : ""}`}>
       <div className="bg-darker w-40 px-4 py-3 font-semibold text-white">
         {label}
       </div>
