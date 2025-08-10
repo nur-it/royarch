@@ -1,5 +1,10 @@
+import ProjectLists from "@/components/sections/project/project-lists";
 import InfoContent from "@/components/shared/info-content";
 import PageTitle from "@/components/shared/page-title";
+
+export const metadata = {
+  title: "Projects | Royarch",
+};
 
 const ProjectsPage = () => {
   return (
@@ -13,6 +18,7 @@ const ProjectsPage = () => {
           The modern architect with innovation
         </p>
       </PageTitle>
+      <ProjectLists />
     </>
   );
 };
