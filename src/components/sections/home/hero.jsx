@@ -29,7 +29,7 @@ const HeroItem = ({
       </div>
 
       {/* Overlay with Content */}
-      <div className="group-hover:from-primary/0 group-hover:via-primary/10 group-hover:to-primary/80 absolute inset-0 z-10 flex items-end bg-black/50 p-11 transition-all duration-300 group-hover:bg-gradient-to-b">
+      <div className="group-hover:via-primary/10 group-hover:to-primary/80 absolute inset-0 z-10 flex items-end bg-black/50 p-11 transition-all duration-300 group-hover:bg-gradient-to-b group-hover:from-white/50">
         <div>
           {/* Category with animated line */}
           <p className="inline-flex items-center text-sm">

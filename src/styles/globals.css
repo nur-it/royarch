@@ -112,4 +112,12 @@
   background-color: theme(--color-slate);
   background-position: center bottom;
   background-size: cover;
+  bg-repeat: no-repeat;
+}
+.page_title_background {
+  background-image: url("/page-title-bg.jpg");
+  background-color: #292929;
+  background-position: center center;
+  background-size: cover;
+  bg-repeat: no-repeat;
 }
