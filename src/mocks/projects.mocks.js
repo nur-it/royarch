@@ -13,6 +13,7 @@ export const portfolioItems = [
   {
     id: 1,
     title: "Stunning modern architecture",
+    slug: "stunning-modern-architecture",
     description:
       "A contemporary residential design featuring clean lines and sustainable materials",
     category: "interior",
@@ -37,6 +38,7 @@ export const portfolioItems = [
   {
     id: 2,
     title: "Innovative Architecture",
+    slug: "innovative-architecture",
     description:
       "Cutting-edge commercial building with unique geometric patterns",
     category: "exterior",
@@ -57,6 +59,7 @@ export const portfolioItems = [
   {
     id: 3,
     title: "Level of evolution",
+    slug: "level-of-evolution",
     description:
       "Modern high-rise development showcasing urban architectural evolution",
     category: "building",
@@ -77,6 +80,7 @@ export const portfolioItems = [
   {
     id: 4,
     title: "Residential design",
+    slug: "residential-design",
     description: "Beautiful family home with traditional and modern elements",
     category: "houses",
     image:
@@ -96,6 +100,7 @@ export const portfolioItems = [
   {
     id: 5,
     title: "Innovation in Craft",
+    slug: "innovation-in-craft",
     description: "Artisanal approach to contemporary interior design",
     category: "interior",
     image:
@@ -115,6 +120,7 @@ export const portfolioItems = [
   {
     id: 6,
     title: "Design your dreams with us",
+    slug: "design-your-dreams-with-us",
     description:
       "Luxury villa project with panoramic views and premium finishes",
     category: "villas",
@@ -135,6 +141,7 @@ export const portfolioItems = [
   {
     id: 7,
     title: "Unique Solution",
+    slug: "unique-solution",
     description: "Sustainable building solution with innovative materials",
     category: "building",
     image:
@@ -154,6 +161,7 @@ export const portfolioItems = [
   {
     id: 8,
     title: "Thoughtfully making space",
+    slug: "thoughtfully-making-space",
     description: "Optimized spatial design for urban living environments",
     category: "metal",
     image:
@@ -173,6 +181,7 @@ export const portfolioItems = [
   {
     id: 9,
     title: "Progressive Assembled",
+    slug: "progressive-assembled",
     description:
       "Modular construction approach with scalable design principles",
     category: "exterior",

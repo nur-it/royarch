@@ -7,26 +7,12 @@ import ProjectsLayout from "./projects-layout";
 
 const ProjectLists = () => {
   const [activeCategory, setActiveCategory] = useState("all");
-  const [selectedItem, setSelectedItem] = useState(null);
 
   const filteredItems =
     activeCategory === "all"
       ? portfolioItems
       : portfolioItems.filter((item) => item.category === activeCategory);
 
-  const handleItemClick = (item) => {
-    setSelectedItem(item);
-  };
-
-  const handleBackToPortfolio = () => {
-    setSelectedItem(null);
-  };
-
-  if (selectedItem) {
-    return (
-      <PortfolioDetails item={selectedItem} onBack={handleBackToPortfolio} />
-    );
-  }
   return (
     <>
       <ProjectFilterTabSection
@@ -35,7 +21,7 @@ const ProjectLists = () => {
       />
       <section className="py-[140px]">
         {filteredItems && filteredItems.length ? (
-          <ProjectsLayout items={filteredItems} onItemClick={handleItemClick} />
+          <ProjectsLayout items={filteredItems} />
         ) : (
           <div className="text-center text-white">No projects found</div>
         )}
