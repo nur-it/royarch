@@ -60,7 +60,7 @@ export default function FormLayout() {
             {formFields.map((field) => (
               <div key={field.name} className="relative">
                 <div className="flex items-center gap-2">
-                  <span className="absolute top-0.5 left-0 pb-3">
+                  <span className="absolute top-0.5 left-0 pb-3 text-white/30">
                     {field.icon}
                   </span>
                   <div className="after:bg-darker relative flex-1 after:absolute after:bottom-0 after:left-0 after:h-2 after:w-4 after:transition-all after:duration-500 after:ease-in-out after:content-[''] focus-within:after:left-[calc(100%-1rem)] focus-within:after:bg-white">
@@ -91,7 +91,7 @@ export default function FormLayout() {
                   placeholder="Message"
                   rows={5}
                   {...register("message", { required: "Message is required" })}
-                  className="border-darker w-full border-b bg-transparent pb-4 text-white placeholder-gray-500 transition-all delay-75 duration-700 ease-in-out outline-none focus:border-white"
+                  className="border-darker w-full border-b bg-transparent pb-4 text-white/70 placeholder-white/30 transition-all delay-75 duration-700 ease-in-out outline-none focus:border-white"
                 ></textarea>
               </div>
 
