@@ -54,23 +54,26 @@ export default function FormLayout() {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="grid grid-cols-1 gap-4 lg:grid-cols-2"
+          className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8"
         >
           <div className="flex flex-col justify-between space-y-6 pb-6 lg:pb-0">
             {formFields.map((field) => (
               <div key={field.name} className="relative">
-                <div className="border-darker flex items-center gap-3 border-b pb-3">
-                  {field.icon}
-                  <input
-                    type={field.type}
-                    placeholder={field.placeholder}
-                    {...register(field.name, field.validation)}
-                    className="flex-1 bg-transparent text-white/70 placeholder-white/30 outline-none"
-                  />
+                <div className="flex items-center gap-2">
+                  <span className="absolute top-0.5 left-0 pb-3">
+                    {field.icon}
+                  </span>
+                  <div className="after:bg-darker relative flex-1 after:absolute after:bottom-0 after:left-0 after:h-2 after:w-4 after:transition-all after:duration-500 after:ease-in-out after:content-[''] focus-within:after:left-[calc(100%-1rem)] focus-within:after:bg-white">
+                    <input
+                      type={field.type}
+                      placeholder={field.placeholder}
+                      {...register(field.name, field.validation)}
+                      autoComplete="off"
+                      className="border-darker w-full border-b bg-transparent pb-4 pl-6 text-white/70 placeholder-white/30 transition-all delay-75 duration-700 ease-in-out outline-none focus:border-white"
+                    />
+                  </div>
                 </div>
 
-                {/* before design */}
-                <div className="bg-darker before:bg-darker relative before:absolute before:-top-1 before:h-1 before:w-4" />
                 {errors[field.name] && (
                   <p className="mt-1 text-sm text-red-500">
                     {errors[field.name]?.message}
@@ -83,14 +86,15 @@ export default function FormLayout() {
           {/* Message Field */}
           <div className="flex flex-col justify-between space-y-6">
             <div className="relative">
-              <textarea
-                placeholder="Message"
-                rows={5}
-                {...register("message", { required: "Message is required" })}
-                className="border-darker w-full border-b bg-transparent text-white placeholder-gray-500 outline-none"
-              ></textarea>
+              <div className="after:bg-darker relative after:absolute after:bottom-2 after:left-0 after:h-2 after:w-4 after:transition-all after:duration-500 after:ease-in-out after:content-[''] focus-within:after:left-[calc(100%-1rem)] focus-within:after:bg-white">
+                <textarea
+                  placeholder="Message"
+                  rows={5}
+                  {...register("message", { required: "Message is required" })}
+                  className="border-darker w-full border-b bg-transparent pb-4 text-white placeholder-gray-500 transition-all delay-75 duration-700 ease-in-out outline-none focus:border-white"
+                ></textarea>
+              </div>
 
-              <div className="bg-darker before:bg-darker relative before:absolute before:-top-3 before:h-1 before:w-4" />
               {errors.message && (
                 <p className="mt-1 text-sm text-red-500">
                   {errors.message.message}
