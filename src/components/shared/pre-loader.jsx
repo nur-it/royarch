@@ -46,7 +46,9 @@ const PreLoaderScreen = () => {
         width={250}
         height={76}
         className={`transition-all duration-700 ease-out ${
-          showImage ? "-translate-y-64 opacity-100" : "translate-y-0 opacity-0"
+          showImage
+            ? "-translate-y-44 opacity-100 2xl:-translate-y-64"
+            : "translate-y-0 opacity-0"
         }`}
       />
 
