@@ -3,7 +3,7 @@ import { EmailIcon, PhoneIcon } from "../shared/svgs";
 
 const InfoContent = () => {
   return (
-    <div className="absolute top-[30px] right-[30px] z-[2] hidden items-center justify-center gap-3 bg-white/5 p-[11px] text-sm font-[300] tracking-wider lg:flex">
+    <div className="text-15 absolute top-[30px] right-[30px] z-[2] hidden items-center justify-center gap-3 bg-white/5 p-[11px] font-[300] tracking-[1px] lg:flex">
       <Link
         href="tel:123456789"
         className="inline-flex items-center gap-1 text-white/80"
