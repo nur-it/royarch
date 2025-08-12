@@ -51,7 +51,7 @@ const HeroItem = ({
 
 const HeroSection = () => {
   return (
-    <div className="grid min-h-[680px] grid-cols-1 lg:grid-cols-2 2xl:min-h-[811px] 2xl:grid-cols-3">
+    <div className="mg:grid-cols-2 grid h-[calc(100vh-100px)] grid-cols-1 overflow-hidden xl:grid-cols-3">
       {hero_items.map((item) => (
         <HeroItem
           key={item.id}

@@ -19,7 +19,7 @@ export const hero_items = [
     category: "Interior",
     title: "Best Interior Design",
     link: "/best-interior-design",
-    visibility: "lg:block",
+    visibility: "md:block",
   },
   {
     id: 3,
@@ -30,6 +30,6 @@ export const hero_items = [
     category: "Building",
     title: "Exterior Collection 2021",
     link: "/exterior-collection-2021",
-    visibility: "2xl:block",
+    visibility: "lg:block",
   },
 ];
